@@ -26,10 +26,4 @@ jobs:
           npm install chalk@latest
           npm install lodash@latest
         
-      - name: Commit dependency fixes and push the changes
-        run: |
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --global user.name "${{ github.actor }}"
-          git add .
-          git commit -m "latest version"
-          git push -u origin stack-init@v.3
+      
